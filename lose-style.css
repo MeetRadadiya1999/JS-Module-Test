@@ -1,0 +1,33 @@
+
+#choices-result-win .choice2{
+    animation: shadow-pulse 3s infinite linear;
+}
+
+/* Animation keyframes */
+@keyframes shadow-pulse {
+    0% {
+        box-shadow: 0 0 0 10px rgba(84, 224, 18, 0.9); /* Initial shadow */
+    }
+    25% {
+        box-shadow: 0 0 30px 40px rgba(69, 207, 4, 0.9); 
+    }
+    50% {
+        box-shadow: 0 0 60px 70px rgba(13, 207, 26, 0.9); 
+    }
+    75% {
+        box-shadow: 0 0 30px 40px rgba(45, 217, 42, 0.9); 
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(29, 197, 48, 0.926); /* Final shadow */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) inset, 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
+
+    }
+}
+
+#choices-result-win .choice{
+    animation: none;
+}
+
+#rules-btn{
+    right: 3vw;
+}

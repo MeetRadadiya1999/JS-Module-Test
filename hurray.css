@@ -1,0 +1,115 @@
+#main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+@keyframes stars-animation {
+    0% {
+        opacity: 0;
+        transform: translateY(20%);
+    }
+    50% {
+        opacity: 1;
+        transform: translateZ(0);
+    }
+    100% {
+        opacity: 0;
+        transform: translateY(10%);
+    }
+}
+
+.stars{
+    width: 50%;
+    display: flex;
+}
+.stars .star{
+    position: absolute;
+    animation: stars-animation 1s linear infinite;
+}
+
+#star1 {
+    top: 27%;
+    left: 30%;
+    animation-delay: 0.2s;
+}
+
+#star2{
+    left: 40%;
+    top: 45%;
+    animation-delay: 0.4s;
+}
+
+#star3 {
+    left: 35%;
+    top: 15%;
+    animation-delay: 0.6s;
+}
+
+#star4 {
+    left: 40%;
+    top: 10%;
+    animation-delay: 0.8s;
+}
+
+#star5 {
+    left: 48%;
+    top: 16%;
+    animation-delay: 1s;
+}
+
+#star6 {
+    left: 58%;
+    top: 12%;
+    animation-delay: 1.2s;
+}
+#star7 {
+    left: 68%;
+    top: 25%;
+    animation-delay: 1.2s;
+}
+#star8 {
+    left: 64%;
+    top: 39%;
+    animation-delay: 1.2s;
+}
+
+/* trophy css */
+#trophy{
+    position: absolute;
+    top: 25%;
+}
+
+#trophy img{
+    width: 14vw;
+}
+
+#paras{
+    display: inline;
+    position: absolute;
+    top: 60%;
+    left: 38%;
+    text-align: center;
+    font-family: "Roboto", sans-serif;
+    color: #ffffff;
+}
+
+#p1{
+  font-size: 5em;
+  font-weight: 600;
+}
+#p2{
+  font-size: 2em;
+  margin-top: 1vw;
+  font-weight: 500;
+}
+
+#play-again{
+    position: absolute;
+    bottom: 10%;
+    left: 45%;
+    padding: 0.7vw 4vw;
+    border-radius: 0.5em;
+    border: none;
+    cursor: pointer;
+}

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <script src="script.js" defer></script>
+    <title>Rock Paper Scissors Game</title>
+</head>
+<body>
+    <div id="score-bar">
+        <div id="heading-div">
+            <h1>ROCK</h1>
+            <h1>PAPER</h1>
+            <h1>SCISSORS</h1>
+        </div>
+        <div id="score-cards">
+            <div id="computer-card" class="card">
+                Computer score
+                <p id="score-comp">0</p>
+            </div>
+            <div id="user-card" class="card">
+                Your score
+                <p id="score-user">0</p>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="choices">
+      
+        <div id="line-1"></div>
+        <div id="line-2"></div> 
+        <div id="line-3"></div>
+        <div class="choice" id="rock" onclick="playGame(id)"><img id="img-1" src="images/Rock.png" alt="ROCK"></div>
+        <div class="choice" id="scissor" onclick="playGame(id)"><img id="img-2" src="images/Scissor.png" alt="SCISSOR"></div>
+        <div class="choice" id="paper" onclick="playGame(id)"><img src="images/Paper.png" alt="PAPER"></div>
+    </div>
+
+
+    <div class="game-rules">
+        <div id="close-btn" onclick="rulesClose()"><img src="images/X.png" alt=""></div>
+        <h2>Game Rules</h2>
+        <ul>
+            <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+            <li>Agree ahead of time whether you’ll count off “rock, paper, scissors, shoot” or just “rock, paper, scissors.”</li>
+            <li>Use rock, paper, scissors to settle minor decisions or simply play to pass the time</li>
+            <li>If both players lay down the same hand, each player lays down another hand</li>
+        </ul>
+    </div>
+
+    <button id="rules-btn" onclick="rulesClick()">RULES</button>
+   
+</body>
+</html>
+

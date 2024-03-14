@@ -1,0 +1,123 @@
+/* choices result div */
+#choices-result-win{
+    display: flex;
+    justify-content: center;
+    height: 18vw;
+    width: 55vw;
+    position: relative;
+    left: 20%;
+    margin-top: 10vw;
+}
+
+/* both images */
+#choices-result-win .choice, .choice2{
+     background-color: #ffffff;
+     display: flex;
+     height: 5vw;
+     width: 5vw;
+     border-radius: 50%;
+     padding: 1vw;
+     align-items: center;
+     justify-content: center;
+     box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) inset, 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
+}
+
+#pick-div{
+    width: 52%;
+    display: flex;
+    justify-content: space-between;
+    position: absolute;
+    left: 21%;
+    margin-top: 6%;
+    color: #ffffff;
+    font-weight: 600;
+    font-family: "Roboto", sans-serif;
+}
+
+/* YOU WIN! content */
+#choices-result-win #win{
+      display: flex;
+      height: 10vw;
+      flex-direction: column;
+      align-items: center;
+      justify-content: space-evenly;
+      margin: 2vw;
+      font-family: "Roboto", sans-serif;
+}
+
+#choices-result-win #p1{
+    color: #ffffff;
+    font-size: 2.3em;
+    font-weight: 600;
+}
+
+#choices-result-win #p2{
+    color: #ffffff;
+    font-size: 1.3em;
+    font-weight: 550;
+}
+
+#choices-result-win button{
+    padding: 0.7vw 3vw;
+    border: none;
+    border-radius: 0.4em;
+    background-color: #fff;
+    color: #6B6B6B;
+    font-weight: 600;
+    cursor: pointer;
+}
+
+#choices-result-win .choice{
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 16px solid #0074B6;
+    animation: shadow-pulse 3s infinite linear;
+}
+
+/* Animation keyframes */
+@keyframes shadow-pulse {
+    0% {
+        box-shadow: 0 0 0 10px rgba(84, 224, 18, 0.9); /* Initial shadow */
+    }
+    25% {
+        box-shadow: 0 0 30px 40px rgba(69, 207, 4, 0.9); 
+    }
+    50% {
+        box-shadow: 0 0 60px 70px rgba(13, 207, 26, 0.9); 
+    }
+    75% {
+        box-shadow: 0 0 30px 40px rgba(45, 217, 42, 0.9); 
+    }
+    100% {
+        box-shadow: 0 0 0 0 rgba(29, 197, 48, 0.926); /* Final shadow */
+        box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2) inset, 0 6px 20px 0 rgba(0, 0, 0, 0.19) inset;
+
+    }
+}
+
+#choices-result-win .choice2{
+    position: absolute;
+    top: 0;
+    left: 83%;
+    border: 16px solid #0074B6;
+  
+}
+
+#rules-btn{
+    right: 12vw;
+}
+
+#next-btn{
+    position: absolute;
+    right: 2vw;
+    bottom: 0.7vw;
+    padding: 0.4vw 2vw;
+    background: none;
+    border: 0.15em solid white;
+    border-radius: 0.7vw;
+    color: #ffffff;
+    font-size: 1.5em;
+    font-family: "Roboto", sans-serif;
+    cursor: pointer;
+}

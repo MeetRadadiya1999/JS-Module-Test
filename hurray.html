@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="hurray.css" />
+    <script src="script.js" defer></script>
+    <title>Hurray!</title>
+  </head>
+  <body>
+    <div id="main">
+      <div class="stars">
+        <div id="star1" class="star"><img src="images/Star.png" alt="" /></div>
+        <div id="star2" class="star"><img src="images/Star-s.png" alt="" /></div>
+        <div id="star3" class="star"><img src="images/Star-m.png" alt="" /></div>
+        <div id="star4" class="star"><img src="images/Star-s.png" alt="" /></div>
+        <div id="star5" class="star"><img src="images/Star-s.png" alt="" /></div>
+        <div id="star6" class="star"><img src="images/Star.png" alt="" /></div>
+        <div id="star7" class="star"><img src="images/Star-s.png" alt="" /></div>
+        <div id="star8" class="star"><img src="images/Star-m.png" alt="" /></div>
+      </div>
+
+      <div id="trophy"><img src="images/Vector.png" alt="" /></div>
+    </div>
+    <div id="paras">
+      <p id="p1">HURRAY!!</p>
+      <p id="p2">YOU WON THE GAME</p>
+    </div>
+
+    <div class="game-rules">
+      <div id="close-btn" onclick="rulesClose()">
+        <img src="images/X.png" alt="" />
+      </div>
+      <h2>Game Rules</h2>
+      <ul>
+        <li>Rock beats scissors, scissors beat paper, and paper beats rock.</li>
+        <li>
+          Agree ahead of time whether you’ll count off “rock, paper, scissors,
+          shoot” or just “rock, paper, scissors.”
+        </li>
+        <li>
+          Use rock, paper, scissors to settle minor decisions or simply play to
+          pass the time
+        </li>
+        <li>
+          If both players lay down the same hand, each player lays down another
+          hand
+        </li>
+      </ul>
+    </div>
+
+
+    <button id="play-again" onclick="playAgain()">PLAY AGAIN</button></div>
+
+    <button id="rules-btn" onclick="rulesClick()">RULES</button>
+  </body>
+</html>
