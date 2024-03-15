@@ -22,8 +22,6 @@ const genCompChoice = () => {
 }
 
 const drawGame = (userChoice, compChoice) => {
-    console.log("Game was Draw! play again.");
-    console.log("User choice:", userChoice);
     if(userChoice === 'rock'){
       window.location.href = "tie-rock.html";
     } else if(userChoice === 'paper'){
@@ -39,11 +37,8 @@ const showWinner = (userWin, userChoice, compChoice) => {
       userScore++;  
       userScoreDiv.innerText = userScore;
       localStorage.setItem('userScore', userScore.toString());
-      console.log(userScore);
-
     } else{
       compScore++;
-      console.log(compScore);
       compScoreDiv.innerText= compScore;
       localStorage.setItem('compScore', compScore.toString());
      }
@@ -90,9 +85,7 @@ window.onload = () => {
 //  On click of buttons - rock, paper, scissor ---->
 
 const playGame = (userChoice) => {
-    console.log(userChoice);
     const compChoice = genCompChoice();
-    console.log(compChoice);
 
     if(userChoice === compChoice){
         drawGame(userChoice, compChoice);
